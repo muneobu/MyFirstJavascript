@@ -1,13 +1,3 @@
-body {
+.lala {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: salmon;
-}
-h1 {
-  color: white;
-}
-.lalala {
-  display: flex;
-}
-.kakaka {
-  margin-right: 10px;
 }
