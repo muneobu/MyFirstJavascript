@@ -1,3 +1,14 @@
-.lala {
+body {
   font-family: "Noto Sans KR", sans-serif;
+}
+h1 {
+  color: #ff6b6b;
+  transition: color 2s ease-in-out;
+  transition: opacity 5s ease-in-out;
+}
+.clicked {
+  color: #2e86de;
+}
+.btn {
+  cursor: pointer;
 }
