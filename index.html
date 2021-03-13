@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muneoscript</title>
     <link href="./index.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -14,7 +12,16 @@
   </head>
   <body>
     <div class="js-clock"><h1>00:00</h1></div>
+    <form class="js-form form">
+      <input
+        class="js-form_input"
+        type="text"
+        placeholder="What is your name?"
+      />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
 
     <script src="./javascript/clock.js"></script>
+    <script src="./javascript/gretting.js"></script>
   </body>
 </html>
