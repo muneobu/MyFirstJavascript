@@ -1,8 +1,9 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
+  background-color: #dfe6e9;
 }
 h1 {
-  color: #ff6b6b;
+  color: #273c75;
   transition: color 2s ease-in-out;
   transition: opacity 5s ease-in-out;
 }
