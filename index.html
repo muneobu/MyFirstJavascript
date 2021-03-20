@@ -9,6 +9,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script defer src="./javascript/clock.js"></script>
+    <script defer src="./javascript/gretting.js"></script>
+    <script defer src="./javascript/todo.js"></script>
   </head>
   <body>
     <div class="js-clock"><h1>00:00</h1></div>
@@ -21,7 +24,9 @@
     </form>
     <h4 class="js-greetings greetings"></h4>
 
-    <script src="./javascript/clock.js"></script>
-    <script src="./javascript/gretting.js"></script>
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+    </form>
+    <ul class="js-toDoList"></ul>
   </body>
 </html>
