@@ -4,20 +4,30 @@ const toDoList = document.querySelector(".js-toDoList");
 const TODOS_LS = "toDos";
 const toDos = [];
 
+function saveToDos() {
+  localStorage.setItem(TODOS_LS, JSON.stringify(toDos));
+}
+
 function paintToDo(text) {
   const li = document.createElement("li");
   const delBtn = document.createElement("button");
-  delBtn.innerHTML = "x";
   const span = document.createElement("span");
+  const newID = toDos.length + 1;
+  delBtn.innerHTML = "x";
+
   span.innerText = text;
+
   li.appendChild(span);
   li.appendChild(delBtn);
+  li.id = newID;
   toDoList.appendChild(li);
+
   const toDoObj = {
     text: text,
-    id: toDos.length + 1,
+    id: newID,
   };
   toDos.push(toDoObj);
+  saveToDos();
 }
 
 function handleSubmit(event) {
@@ -30,6 +40,8 @@ function handleSubmit(event) {
 function loadToDos() {
   const loadedToDos = localStorage.getItem(TODOS_LS);
   if (loadedToDos !== null) {
+    const parsedToDos = JSON.parse(loadedToDos);
+    parsedToDos.forEach((쀑) => paintToDo(쀑.text));
   }
 }
 
