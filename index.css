@@ -1,6 +1,6 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: #dfe6e9;
+  background-color: #596275;
 }
 h1 {
   color: #273c75;
@@ -20,4 +20,23 @@ h1 {
 }
 .showing {
   display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
